@@ -1,105 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shree Hari Mobile World - Durga Puja Special App Download</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    .font-festive {
-      font-family: 'Rozha One', serif;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-    .festive-card {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(10px);
-    }
-    .glow-btn {
-      box-shadow: 0 0 20px rgba(217, 119, 6, 0.4);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile World - Shree Hari | App Download</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 100%;
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            background: #2563eb;
+            border-radius: 20px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #f8fafc;
+        }
+
+        p.subtitle {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        /* Rating Badge Section */
+        .rating-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 12px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 18px;
+        }
+
+        .rating-text {
+            font-size: 15px;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+
+        .happy-customers {
+            font-size: 12px;
+            color: #38bdf8;
+            font-weight: 500;
+        }
+
+        /* Download Button */
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px rgba(37, 99, 235, 0.5);
+        }
+
+        /* Review Button */
+        .review-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #f8fafc;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .review-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .review-btn i {
+            color: #ea4335;
+            font-size: 16px;
+        }
+
+        /* Social Media Section */
+        .social-title {
+            font-size: 13px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn.whatsapp { background: #25d366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); }
+        .social-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); box-shadow: 0 4px 12px rgba(220, 39, 67, 0.3); }
+        .social-btn.facebook { background: #1877f2; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3); }
+
+        .social-btn:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #64748b;
+        }
+    </style>
 </head>
-<body class="bg-amber-50 text-slate-800 min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+<body>
 
-  <!-- Background Festive Decorative Lights / Elements -->
-  <div class="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-red-600 via-amber-500 via-yellow-400 via-emerald-500 to-red-600"></div>
-  
-  <div class="p-4 text-center mt-4">
-    <!-- Festive Header Badge -->
-    <div class="inline-flex items-center gap-2 bg-red-100 border border-red-300 text-red-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase mb-3 shadow-sm">
-      <i class="fa-solid fa-om text-red-600"></i>
-      <span>শুভ শারদীয়ার প্রীতি ও শুভেচ্ছা</span>
-      <i class="fa-solid fa-om text-red-600"></i>
+    <div class="container">
+        <!-- App Logo -->
+        <div class="logo">
+            MW
+        </div>
+
+        <!-- Title -->
+        <h1>Mobile World</h1>
+        <p class="subtitle">Shree Hari | Official Android App</p>
+
+        <!-- Rating Section -->
+        <div class="rating-box">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="rating-text">4.8 / 5.0 Rating</div>
+            <div class="happy-customers"><i class="fa-solid fa-users"></i> 1000+ Happy Customers</div>
+        </div>
+
+        <!-- APK Download Button -->
+        <a href="https://github.com/avhidhibar84-netizen/Mobile-world-customer/releases/download/v1.0.0/MobileWorld.apk" class="download-btn" download>
+            <i class="fa-solid fa-download"></i> Download App
+        </a>
+
+        <!-- Google Review Button -->
+        <a href="https://local.google.com/place?placeid=ChIJnU0tDLYT9zkRp07XPjGZfdE&utm_medium=noren&utm_source=gbp&utm_campaign=2026" target="_blank" class="review-btn">
+            <i class="fa-brands fa-google"></i> Leave a Google Review
+        </a>
+
+        <!-- Social Media Links -->
+        <div class="social-title">Connect With Us</div>
+        <div class="social-links">
+            <a href="https://wa.me/message/Z3E4IHACSIJYH1" target="_blank" class="social-btn whatsapp" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/mobile_world_shree_hari?stkn=YmV4MTdjcGJpN3Jh" target="_blank" class="social-btn instagram" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/18M9pqVSfh/" target="_blank" class="social-btn facebook" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <footer>
+            © Mobile World - Shree Hari. All rights reserved.
+        </footer>
     </div>
-    <h1 class="text-3xl md:text-4xl font-extrabold text-red-700 tracking-tight font-festive">
-      Shree Hari Mobile World
-    </h1>
-    <p class="text-amber-800 text-sm font-semibold mt-1">
-      ✨ দুর্গোৎসবের স্পেশাল অফার ও নতুন স্মার্টফোন এখন অ্যাপে! ✨
-    </p>
-  </div>
-
-  <!-- Main Content Card -->
-  <div class="max-w-md mx-auto w-full px-4 my-auto">
-    <div class="festive-card border-2 border-amber-200/80 rounded-3xl p-6 shadow-2xl text-center relative overflow-hidden">
-      
-      <!-- Top Decorative Arch Banner -->
-      <div class="absolute -top-12 -left-12 w-24 h-24 bg-amber-200/50 rounded-full blur-xl"></div>
-      <div class="absolute -bottom-12 -right-12 w-24 h-24 bg-red-200/50 rounded-full blur-xl"></div>
-
-      <!-- Custom Logo Placeholder (logo.png) -->
-      <div class="relative w-36 h-36 mx-auto mb-4 flex items-center justify-center">
-        <div class="absolute inset-0 bg-gradient-to-tr from-amber-400 to-red-500 rounded-full animate-pulse opacity-20 blur-md"></div>
-        <img 
-          src="logo.png" 
-          alt="Shree Hari Mobile World Logo" 
-          class="w-32 h-32 object-contain rounded-2xl relative z-10 p-2 bg-white/80 border border-amber-200 shadow-md"
-        />
-      </div>
-
-      <h2 class="text-xl font-bold text-slate-900 mb-1">
-        Official Android App Download
-      </h2>
-      <p class="text-slate-600 text-xs mb-6 leading-relaxed">
-        আমাদের অফিসিয়াল অ্যাপটি ডাউনলোড করুন এবং পূজোর এক্সক্লুসিভ ডিসকাউন্টে নিজের পছন্দের ফোন বুক করুন!
-      </p>
-
-      <!-- Download Button with Link -->
-      <a href="https://github.com/avhidhibar84-netizen/Mobile-world-customer/releases/download/v1.0.0/_Mobile_world_20249805.apk" 
-         download="Shree-Hari-Mobile-World.apk" 
-         class="glow-btn w-full bg-gradient-to-r from-red-600 via-amber-600 to-red-600 hover:from-red-700 hover:to-amber-700 text-white font-extrabold py-4 px-6 rounded-2xl shadow-xl flex items-center justify-center gap-3 transition-all duration-200 active:scale-95 text-base">
-        <i class="fa-solid fa-cloud-arrow-down text-2xl animate-bounce"></i>
-        <span>DOWNLOAD APP (APK)</span>
-      </a>
-
-      <!-- Quick How-To-Install Guide -->
-      <div class="mt-6 text-left bg-amber-100/60 p-4 rounded-2xl border border-amber-200 text-xs">
-        <p class="text-red-700 font-bold mb-2 flex items-center gap-1.5">
-          <i class="fa-solid fa-circle-check"></i>
-          <span>সহজ ইনস্টলেশন গাইড:</span>
-        </p>
-        <ol class="text-slate-700 list-decimal pl-4 space-y-1.5">
-          <li>উপরে <b>DOWNLOAD APP</b> বোতামে ক্লিক করুন।</li>
-          <li>ডাউনলোড হওয়া APK ফাইলটিতে ক্লিক করে ওপেন করুন।</li>
-          <li>ফোনে <i>"Install from Unknown Sources"</i> পারমিশন Allow করে ইনস্টল সম্পন্ন করুন।</li>
-        </ol>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Footer with Festive Message -->
-  <div class="text-center text-xs text-amber-900/70 py-6 px-4">
-    <p class="font-medium">🪔 আপনার ও আপনার পরিবারের পুজো খুব ভালো কাটুক! 🪔</p>
-    <p class="mt-1 text-amber-800/50">&copy; Shree Hari Mobile World. All rights reserved.</p>
-  </div>
 
 </body>
 </html>
